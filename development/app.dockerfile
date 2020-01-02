@@ -20,6 +20,10 @@ COPY . /var/www
 RUN chown -R www-data:www-data /var/www \
         /var/www/storage \
         /var/www/bootstrap/cache
+        
+RUN chmod -R 777  /var/www/storage
+
+RUN chmod -R 777  /var/www/storage/logs/laravel.log
 
 RUN  apt-get install -y libmcrypt-dev \
         libmagickwand-dev --no-install-recommends \

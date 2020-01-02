@@ -31,7 +31,7 @@ class EtudiantsController extends Controller
         $etudiant->section = $request->input('section');
         $etudiant->groupe = $request->input('groupe');
         if($etudiant->save()){
-        return new EtudiantResource($etudiant);
+        return response()->json(new EtudiantResource($etudiant) , 201);
         }
     }
 
@@ -45,7 +45,7 @@ class EtudiantsController extends Controller
     {
  
         $etudiant = Etudiant::findOrFail($id);
-        return new EtudiantResource($etudiant);
+         return response()->json( new EtudiantResource($etudiant), 200);
     }
 
     /**
@@ -77,7 +77,10 @@ class EtudiantsController extends Controller
     {
         $etudiant = Etudiant::findOrFail($id);
      if($etudiant->delete()){
-        return new EtudiantResource($etudiant);
+      
+      return $this->sendSuccess("Etudiant supprimé avec success !");
+     }else{
+      return $this->sendSuccess("Erreur de suppression !");
       }
     }
 }

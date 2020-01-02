@@ -30,7 +30,7 @@ services:
       # The Database
   database:
     container_name: mysql_database_igl
-    image: mysql
+    image: mysql:5.7
     environment:
       - "MYSQL_DATABASE=igl_project"
       - "MYSQL_USER=user"

@@ -23,7 +23,7 @@ Route::get('etudiants','EtudiantsController@index');
 // afficher etudiant
 Route::get('etudiant/{id}','EtudiantsController@show');
 //creer etudiant
-Route::post('etudiant/{id}','EtudiantsController@store');
+Route::post('etudiant/{id}','EtudiantsController@store'); 
 //Update etudiant
 Route::put('etudiant/{id}','EtudiantsController@update');
 //Supprimer etudiant
