@@ -82,8 +82,10 @@ php artisan db:seed</pre></div>
 <div class="highlight highlight-source-shell">
 <pre>git clone https://github.com/haf2000/igl_project.git</pre></div>
 <ol start="2"> 
- <li>Ouvrir Docker Quickstart Terminal.</li>
+ <li>Ouvrir Docker Quickstart Terminal et aller vers le répertoire du projet : </li>
 </ol>
+<div class="highlight highlight-source-shell">
+ <pre><span class="pl-smi">cd</span> <span class="pl-k">CheminVersProjet</span></pre></div>
 <ol start="3"> 
  <li>Construiser un environnement docker en éxecutant : </li>
 </ol>
