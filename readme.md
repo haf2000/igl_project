@@ -154,9 +154,17 @@ exit</pre></div>
 </ol>
 <hr>
 <h3>6- Documentation automatique des APIs : </h3>
+Pour la documentation automatique , on a suit les étapes de ce tuto suivant : <a href="https://github.com/mtrajano/laravel-swagger/tree/master/config">Laravel Swagger set up</a> d'aprés ceci on a généré le fichier :<strong> swagger.json </strong>.
+<p>On a opté à la documentation interactive online de SWAGGER, on a importé le contenu de <strong> swagger.json </strong> et on a obtenu les résultats suivants :<br>
+<img src="https://github.com/haf2000/igl_livrabes/blob/master/img/test1.PNG">
+</p>  
+<p>Donc on a pu documenter nos API routes et vous pouvez visualiser ce qu'on fait sur : <a href="https://app.swaggerhub.com/apis/Esi766/ESI/1.0.0#trial">Swagger</a></p>
+<p>On s'excuse pour ne pas documenter les models et controllers , c'est tout ce qu'on a pu faire </p>
+
 <hr>
 <h3>7- Nos livrables : </h3>
-<p>voici notre diagramme de notre architecture SOA : <a href="https://github.com/haf2000/igl_livrabes/blob/master/Architecture%20de%20l'application.pdf">Diagramme SOA</a> </p>
+<p>Voici notre diagramme de notre architecture SOA : <a href="https://github.com/haf2000/igl_livrabes/blob/master/Architecture%20de%20l'application.pdf">Diagramme SOA</a> </p>
+<p>Voici le rapport du tp : <a href="https://github.com/haf2000/igl_livrabes/blob/master/Rapport%20TP%20IGL%20(1).pdf">Rapport</a> </p>
 <hr>
 
 
