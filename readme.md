@@ -142,7 +142,16 @@ exit</pre></div>
  <pre>vendor/bin/phpunit</pre></div>
 <hr>
 <h3>5- Les tests en utilisant Selenium : </h3>
-
+<ol start="1">
+<li> Aller vers : <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd">Selenium IDE</a></li>
+ <li> Cliquer sur :<br><br> <img src ="https://github.com/haf2000/igl_livrabes/blob/master/img/AjouterEx.PNG"/></li>
+ <li> Utiliser cette extension en cliquant sur : <br><img src="https://github.com/haf2000/igl_livrabes/blob/master/img/SE.PNG"/></li>
+ <li> Cette fenêtre apparait , veuillez choisir : Open an existing project <br><br><img src="https://github.com/haf2000/igl_livrabes/blob/master/img/SE_fenetre.PNG"/></li>
+ <li>Chosir le fichier dont le chemin dans notre projet : ./Selenium/App_ESI_Test.side</li>
+ <li>Cliquer sur le bouton dont la flèche est verte si vous voulez executer tous les tests qui existent , sinon sélectionner le test voulu et cliquer sur le bouton dont la flèche est rouge <br><br><img src="https://github.com/haf2000/igl_livrabes/blob/master/img/fenetre.PNG"/></li>
+ <li>Visualiser les résultats des tests.</li>
+</ol>
+<hr>
 
 
 

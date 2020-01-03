@@ -184,7 +184,7 @@
             this.editedItem.section='';
             this.editedItem.matricule='';
             this.editedItem.groupe='';
-            alert("Etudiant Ajouté avec success !")
+           // alert("Etudiant Ajouté avec success !")
             this.fetchEtudiant();
           }).catch(err => console.log(err))
        
