@@ -1,58 +1,86 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<h1>TP igl laravel/VueJS</h1>
+<h3>1- Introduction à l'application :  </h3>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+<hr>
+<h3>2- Versions :  </h3>
+ <p> D'abord , veuillez executer les commandes suivantes pour vérifier les versions actuelles des logiciels utilisés : <p>
+<div class="highlight highlight-source-shell">
+<pre>php --version
+git --version
+composer --version
+laravel --version</pre></div>
+ <p>Pour la version de MySQL , vous pouvez la visualiser quand vous démarrer le Control panel de Xampp à coté du titre , sinon executer cette commande dans MySQL Command Line Client :</p>
+ <div class="highlight highlight-source-shell">
+<pre>select version() ;</pre></div>
+</ul>
+<hr>
+<h3>3- Lancer l'application localement (en utilisant Xampp) :</h3>
+<ol start="1"> 
+ <li>Clone le repository en exécutant : </li>
+</ol>
+<div class="highlight highlight-source-shell">
+<pre>git clone https://github.com/haf2000/igl_project.git</pre></div>
+<ol start="2"> 
+ <li>Démarrer le CMD et allez vers le répertoire du projet en executant : </li>
+</ol>
+<div class="highlight highlight-source-shell">
+ <pre><span class="pl-smi">cd</span> <span class="pl-k">CheminVersProjet</span></pre></div>
+ <ol start="3"> 
+ <li>Installer les dépendances du Composer : </li>
+</ol>
+<div class="highlight highlight-source-shell">
+ <pre>composer install</pre></div>
+ <ol start="4"> 
+ <li>Créez une copie de votre fichier .env : </li>
+</ol>
+<div class="highlight highlight-source-shell">
+ <pre>cp .env.example .env</pre></div>
+<p>Remarque : Si ça marche pas veuillez executer :</p> 
+<div class="highlight highlight-source-shell">
+ <pre>copy .env.example .env</pre></div>
+<ol start="5"> 
+ <li>Générer une clé de chiffrement d'application : </li>
+</ol> 
+<div class="highlight highlight-source-shell">
+ <pre>php artisan key:generate</pre></div>
+<ol start="6"> 
+ <li>Créer une base de donnée nommée : <strong>igl_project</strong>, ou bien nommer la bdd de votre choix en modifiant les configurations de votre fichier .env </li>
+</ol> 
+<ol start="7"> 
+ <li>Migrer la bdd et la remplir avec des données aléatoires : </li>
+</ol> 
+<div class="highlight highlight-source-shell">
+ <pre>php artisan migrate
+php artisan db:seed</pre></div>
+<ol start="8"> 
+ <li>Enfin , démarrer l'application en exécutant : </li>
+</ol> 
+<div class="highlight highlight-source-shell">
+ <pre>php artisan serve</pre></div>
+<hr>
+<h3>3- Lancer l'application en utilisant Docker : </h3>
+<hr>
+<h3>4- Les tests unitaires : </h3>
+<p>On a tester les requêtes en utilisant <strong>phpunit</strong>, on a choisis de tester que 3 fonctionnalités de ce qu'on a fait : </p>
+<ol start="1">
+ <li>Ajouter étudiant : tester le POST request, format json et le status code en retour : 201.</li>
+ <li>Afficher étudiant : tester le GET request , format json et le status code en retour : 200.</li>
+ <li>Supprimer étudiant :  tester le DELETE request ,tester le GET request de l'étudiant supprimé en retournant un status code : 404 not found pour vérifier sa suppression totale.</li>
+</ol>
+<p>Pour executetr les tests faits veuillez executer la commande suivante : </p>
+<div class="highlight highlight-source-shell">
+ <pre>vendor/bin/phpunit</pre></div>
+<hr>
+<h3>5- Les tests en utilisant Selenium : </h3>
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
 
-Laravel is accessible, yet powerful, providing tools needed for large, robust applications.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of any modern web application framework, making it a breeze to get started learning the framework.
 
-If you're not in the mood to read, [Laracasts](https://laracasts.com) contains over 1100 video tutorials on a range of topics including Laravel, modern PHP, unit testing, JavaScript, and more. Boost the skill level of yourself and your entire team by digging into our comprehensive video library.
 
-## Laravel Sponsors
 
-We would like to extend our thanks to the following sponsors for helping fund on-going Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell):
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Pulse Storm](http://www.pulsestorm.net/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
 
-## Contributing
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
