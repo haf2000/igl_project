@@ -152,6 +152,11 @@ exit</pre></div>
  <li>Visualiser les résultats des tests.</li>
 </ol>
 <hr>
+<h3>6- Documentation automatique des APIs : </h3>
+<hr>
+<h3>7- Nos livrables : </h3>
+<p>voici notre diagramme de notre architecture SOA : <a href="https://github.com/haf2000/igl_livrabes/blob/master/Architecture%20de%20l'application.pdf">Diagramme SOA</a> </p>
+<hr>
 
 
 
