@@ -4,7 +4,7 @@ services:
 
   #  The Application
   app:
-    container_name: laravel_igl
+    container_name: app_esi
     build:
       context: ./
       dockerfile: development/app.dockerfile
@@ -18,7 +18,7 @@ services:
 
       # The Web Server
   web:
-    container_name: nginx_server_igl
+    container_name: nginx_server
     build:
       context: ./
       dockerfile: development/web.dockerfile
@@ -29,7 +29,7 @@ services:
 
       # The Database
   database:
-    container_name: mysql_database_igl
+    container_name: mysql_database
     image: mysql:5.7
     environment:
       - "MYSQL_DATABASE=igl_project"

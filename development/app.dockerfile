@@ -17,13 +17,11 @@ RUN php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');" \
 
 COPY . /var/www
 
-RUN chown -R www-data:www-data /var/www \
+RUN chown -R www-data:www-data \
         /var/www/storage \
         /var/www/bootstrap/cache
-        
-RUN chmod -R 777  /var/www/storage
 
-RUN chmod -R 777  /var/www/storage/logs/laravel.log
+RUN chmod -R 777 /var/www/storage 
 
 RUN  apt-get install -y libmcrypt-dev \
         libmagickwand-dev --no-install-recommends \
@@ -34,3 +32,6 @@ RUN  apt-get install -y libmcrypt-dev \
 RUN mv .env.prod .env
 
 RUN php artisan optimize
+
+
+        

@@ -11,7 +11,7 @@ class EtudiantTest extends TestCase
     {
                $student =factory(Etudiant::class)->make()->toArray();
                 $this->response = $this->json('POST', 'api/etudiant/1',$student);
-                error_log('Test API REsponse');
+                error_log('Test API Response');
             $this->assertJson(json_encode($student));
            
             $this->response->assertStatus(201);       
