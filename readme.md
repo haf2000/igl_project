@@ -143,6 +143,7 @@ exit</pre></div>
 <hr>
 <h3>5- Les tests en utilisant Selenium : </h3>
 <ol start="1">
+<li>On a décidé de faire 3 tests automatisés avec Selenium.</li>
 <li> Aller vers : <a href="https://chrome.google.com/webstore/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd">Selenium IDE</a></li>
  <li> Cliquer sur :<br><br> <img src ="https://github.com/haf2000/igl_livrabes/blob/master/img/AjouterEx.PNG"/></li>
  <li> Utiliser cette extension en cliquant sur : <br><img src="https://github.com/haf2000/igl_livrabes/blob/master/img/SE.PNG"/></li>
