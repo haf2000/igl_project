@@ -77,10 +77,9 @@ class EtudiantsController extends Controller
     {
         $etudiant = Etudiant::findOrFail($id);
      if($etudiant->delete()){
-      
-      return $this->sendSuccess("Etudiant supprimé avec success !");
+        return new EtudiantResource($etudiant);
      }else{
-      return $this->sendSuccess("Erreur de suppression !");
+     return $this->sendSuccess("Erreur de suppression !");
       }
     }
 }

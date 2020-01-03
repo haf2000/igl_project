@@ -221,12 +221,11 @@
      //--------------------------------Supprimer etudiant-------------
       deleteEtudiant (id) {
 
-       //console.log('/api/etudiant/'+id);
+       console.log('/api/etudiant/'+id);
      if(confirm('Êtes-vous sur de vouloir supprimer cette personne ?') ){
        fetch('/api/etudiant/'+id,{
          method : 'delete'
-       }).then(res => res.json())
-       .then(data => {
+       }).then(data => {
          alert("Etudiant supprimé");
          this.fetchEtudiant();
        })
