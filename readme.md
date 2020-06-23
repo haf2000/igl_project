@@ -1,6 +1,6 @@
 <h1>TP igl laravel/VueJS</h1>
 <h3>1- Introduction à l'application :  </h3>
-<p>Pour la réalisation, nous avons opté pour la programmation des sept fonctionnalités suivantes : </p>
+<p>Pour la réalisation du projet qui consiste à faire une application web pour la gestion de scolarité à l'ESI, nous avons opté pour la programmation des sept fonctionnalités suivantes : </p>
 <ul>
  <li>Ajouter Etudiant</li>
  <li>Modifier Etudiant</li>
